@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>welcome to home</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      .main  {
+        height:100vh;
+        width:100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("mainimage.jpg");
+  background-size: cover;
+  }
+  .main h1{
+    position:absolute;
+    top:50%;
+    left:8%;
+    color:white;
+    font-size:50px;
+  }
+ul {
+  list-style-type: none;
+  float:left;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+
+}
+li img {
+  float: right;
+  height:20%;
+  width:20%;
+}
+li a {
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+#contact {
+  display:none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#about{
+  display:none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+.salerent
+{
+  position:relative;
+  height:100vh;
+  width:100vw;
+  background-color:gray;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+
+}
+
+.right {
+  right: 0;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+    <div>
+    <ul>
+      <li><img src="logo.png" name="logo"></li>
+      <li><a class="active" href="#home">Home</a></li>
+    <!--  <li><a href="#signin">sign in</a></li>-->
+      <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    </div>
+    <h1> Pick your dream home!</h1>
+    </div>
+    <div id="contact">
+
+          <h1>Contact Us</h1>
+                    <h4>Office Location:</h4> <p>42/35 oiefhih, reuygg, erode.</p>
+                    <h4>Email:</h4> <p>ewguwj@gmail.com</p>
+                    <h4>Call: </h4> <p>9876543298</p>
+    </div>
+    <div id="about">
+
+          <h1>about us</h1>
+          <p>Sigaram Associations helps you in providing list of sale and rental properties people search for. The properties are the ones which is being uploaded by the respective owners. People can post an advertisement of their property to be sold for or for rental purpose. One can also own or rent a land which the owner has been posted with specific details.</p>
+
+    </div>
+    <div class="salerent">
+   <div class="split left">
+  <div class="centered">
+    <a href="uploadrent.html"><img src="advertisec.png" alt="sale"></a>
+    <h2>Sale</h2>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <a href="rent.html"><img src="rentc.png" alt="rent"></a>
+    <h2>BUY OR RENT</h2>
+  </div>
+</div>
+</div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("contact");
+      if (x.style.display === "none") {
+        x.style.display = "inline-block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function myFunction1() {
+      var x = document.getElementById("about");
+      if (x.style.display === "none") {
+        x.style.display = "inline-block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
+  </body>
+</html>
